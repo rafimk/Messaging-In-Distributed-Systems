@@ -1,0 +1,12 @@
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\bin\Debug\net6.0\SuperStore.Shared.deps.json
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\bin\Debug\net6.0\SuperStore.Shared.dll
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\bin\Debug\net6.0\SuperStore.Shared.pdb
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\SuperStore.Shared.csproj.AssemblyReference.cache
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\SuperStore.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\SuperStore.Shared.AssemblyInfoInputs.cache
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\SuperStore.Shared.AssemblyInfo.cs
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\SuperStore.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\SuperStore.Shared.dll
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\refint\SuperStore.Shared.dll
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\SuperStore.Shared.pdb
+C:\Projects\Messaging-In-Distributed-Systems\src\SuperStore.Shared\obj\Debug\net6.0\ref\SuperStore.Shared.dll

@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Funds\\SuperStore.Funds.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Funds\\SuperStore.Funds.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Funds\\SuperStore.Funds.csproj",
+        "projectName": "SuperStore.Funds",
+        "projectPath": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Funds\\SuperStore.Funds.csproj",
+        "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Funds\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\muham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Shared\\SuperStore.Shared.csproj": {
+                "projectPath": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Shared\\SuperStore.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Shared\\SuperStore.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Shared\\SuperStore.Shared.csproj",
+        "projectName": "SuperStore.Shared",
+        "projectPath": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Shared\\SuperStore.Shared.csproj",
+        "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\muham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0-preview.3.22175.4, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

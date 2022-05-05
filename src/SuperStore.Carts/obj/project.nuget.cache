@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BejriGl0lG/kDO1fGkXqdiCCevBkESNmM/mg09ORIbb3tD6i9VTK3lL1dG9S1fcq9Ueeby9T/L91BXZ31xff3w==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Messaging-In-Distributed-Systems\\src\\SuperStore.Carts\\SuperStore.Carts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\muham\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-preview.3.22175.4\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.3.22175.4.nupkg.sha512",
+    "C:\\Users\\muham\\.nuget\\packages\\rabbitmq.client\\6.2.4\\rabbitmq.client.6.2.4.nupkg.sha512",
+    "C:\\Users\\muham\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\muham\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
