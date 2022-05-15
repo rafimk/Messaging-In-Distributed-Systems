@@ -2,16 +2,21 @@
 using System.Text.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using SuperStore.Shared.Accessors;
 using SuperStore.Shared.Connections;
 
 namespace SuperStore.Shared.Subscribers;
 
 internal sealed class MessageSubscriber : IMessageSubscriber
 {
+    private readonly IMessageIdAccessor _messageIdAccessor;
     private readonly IModel _channel;
 
-    public MessageSubscriber(IChannelFactory channelFactory) 
-        =>_channel = channelFactory.Create();
+    public MessageSubscriber(IChannelFactory channelFactory, IMessageIdAccessor messageIdAccessor)
+    {
+        _messageIdAccessor = messageIdAccessor;
+        _channel = channelFactory.Create();
+    }
 
     public IMessageSubscriber SubscribeMessage<TMessage>(string queue, string routingKey, string exchange, Func<TMessage, BasicDeliverEventArgs, Task> handle) where TMessage : class, IMessage
     {
@@ -19,7 +24,7 @@ internal sealed class MessageSubscriber : IMessageSubscriber
         _channel.QueueDeclare(queue, durable: false, autoDelete: false, exclusive: false);
         _channel.QueueBind(queue, exchange, routingKey);
         
-        // _channel.BasicQos(0, 1, false);
+        _channel.BasicQos(0, 1, false);
         
         var consumer = new EventingBasicConsumer(_channel);
         consumer.Received += async (model, ea) =>
@@ -27,14 +32,14 @@ internal sealed class MessageSubscriber : IMessageSubscriber
             var body = ea.Body.ToArray();
             var message = JsonSerializer.Deserialize<TMessage>(Encoding.UTF8.GetString(body));
 
-            // _messageIdAccessor.SetMessageId(ea.BasicProperties.MessageId);
+            _messageIdAccessor.SetMessageId(ea.BasicProperties.MessageId);
             
             await handle(message, ea);
             
-            // _channel.BasicAck(ea.DeliveryTag, multiple: false);
+            _channel.BasicAck(ea.DeliveryTag, multiple: false);
         };
 
-        _channel.BasicConsume(queue, autoAck: true, consumer: consumer);
+        _channel.BasicConsume(queue, autoAck: false, consumer: consumer);
 
         return this;
     }

@@ -3,3 +3,8 @@ Messaging-In-Distributed-Systems
 
 docker run -d -p 5672:5672 -p 15672:15672 rabbitmq:3.10.0-management
 
+git remote add origin https://github.com/rafimk/Messaging-In-Distributed-Systems.git
+
+
+
+dotnet ef migrations add Initial -o DAL/Migrations

@@ -10,4 +10,9 @@
       <ProjectReference Include="..\SuperStore.Shared\SuperStore.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="EasyCronJob.Core" Version="2.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0-preview.4.22229.4" />
+    </ItemGroup>
+
 </Project>
